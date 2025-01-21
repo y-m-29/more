@@ -1,0 +1,236 @@
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  line-height: 2;
+  letter-spacing: 0.14em;
+  font-size: 16px;
+  color: rgb(80, 79, 79);
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  margin-top: 0;
+  display: none;
+}
+
+/***** header部分 *****/
+
+header{
+  background-color: white;
+  width: 100%;
+  z-index: 1000;
+  box-shadow: 0px 1px 4px rgba(216, 216, 216, 0.25);
+  text-align: left;
+  position: fixed;
+  top: 0;
+}
+
+.header-title {
+  font-size: 48px;
+  letter-spacing: 0.14em;
+  font-weight: 400;
+  margin-left: 100px;
+}
+
+.header-title:hover {
+  opacity: 0.7;
+}
+
+/***** My profile部分 *****/
+
+.profile{
+  margin-top: 150px;
+}
+
+.img-comment{
+  display: flex;
+  align-items: start;
+}
+
+.profile-img{
+  width: 200px;
+  height: auto;
+  padding-top: 10px;
+}
+
+.t-p{
+  width: 70%;
+  margin-left: 30px;
+}
+
+th{
+  width: 120px;
+  text-align-last: left;
+  padding-right: 10px;
+  font-weight: 500;
+}
+
+/***** Career部分 *****/
+
+.career{
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.th-c{
+  width: 180px;
+  text-align: left;
+}
+
+
+/* Footer部分 */
+.footer {
+  display: flex;
+  margin: 50px 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-p {
+  font-size: 14px;
+  text-align: right;
+}
+
+.back {
+  position: relative;
+  cursor: pointer;
+}
+
+.back:hover {
+  cursor: pointer;
+}
+
+
+/* ホバー時、１枚目透過 */
+.back:hover img:first-of-type {
+  opacity: 0;
+}
+
+/* ２枚目の位置と透過 */
+.back img:last-of-type {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  opacity: 0;
+}
+
+/* ホバー時２枚目表示 */
+.back:hover img:last-of-type {
+  opacity: 1;
+}
+
+
+
+
+/* 共通クラス */
+
+.section-title {
+  font-size: 40px;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.14em;
+}
+
+.section-sub {
+  font-size: 20px;
+  font-weight: 400;
+  margin-left: 40px;
+}
+
+.title-inner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.inner {
+  margin: 0 100px;
+}
+
+/* レスポンシブ */
+
+
+/* 768px以上 */
+@media screen and (min-width: 768px) {
+  .career-sp{
+    display: none;
+  }
+}
+
+/* 767px以下 */
+@media screen and (max-width: 767px) {
+
+  /* header部分 */
+
+  .header-title {
+    font-size: 36px;
+    margin-left: 20px;
+    padding: 20px 0;
+    letter-spacing: 0.14em;
+  }
+
+
+  /* My profile部分 */
+
+  .img-comment{
+    display: block;
+  }
+
+  .p-img{
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  table{
+    width: 100%;
+    margin-left: 0;
+  }
+
+  /* Career部分 */
+
+  .career{
+    display: none;
+  }
+.career-sp{
+  margin-top: 100px;
+}
+
+.t-p{
+  margin-left: 0;
+  width: 100%;
+}
+
+.t-sp-last{
+  margin-bottom: 100px;
+}
+
+.footer {
+  display: flex;
+  margin: 50px 30px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.inner{
+  margin: 0 30px;
+}
+
+.section-title{
+  font-size: 30px;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.14em;
+}
+
+.section-sub{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+}
+
+}
+/*# sourceMappingURL=style.css.map */
