@@ -39,6 +39,15 @@ header{
 
 .profile{
   margin-top: 150px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.profile.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
 }
 
 .img-comment{
@@ -69,6 +78,15 @@ th{
 .career{
   margin-top: 100px;
   margin-bottom: 50px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.career.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 1.5s;
 }
 
 .th-c{
@@ -192,8 +210,18 @@ th{
   .career{
     display: none;
   }
+  
 .career-sp{
   margin-top: 100px;
+  opacity: 0;
+  transform: translateY(50px);
+  transition: 2s;
+}
+
+.career-sp.fade-in{
+  opacity: 1;
+  transform: translateY(0);
+  transition-delay: 0.5s;
 }
 
 .t-p{
