@@ -1,22 +1,23 @@
-// body,top-img フェードイン
+// body フェードイン
 jQuery("body").fadeIn(1000);
-jQuery(".top-img").fadeIn(3000);
 
-// 1640px Menu表示
-jQuery(".nav-item-menu").click(function(){
-  jQuery(".nav-item-sp").slideToggle(300);
-})
+// 各セクション表示
 
-// top-btn 表示・非表示
-jQuery(window).scroll(function () {
-  if (jQuery(this).scrollTop() > 200) {
-    jQuery(".top-btn").fadeIn(300);
-  } else {
-    jQuery(".top-btn").fadeOut(300);
-  }
+jQuery(function(){
+  jQuery(".profile").on("inview",function(){
+    jQuery(this).addClass("fade-in");
+  });
 });
 
-// top-btn クリック
-jQuery(".top-btn").click(function () {
-  jQuery("html,body").animate({scrollTop:0},500);
+jQuery(function(){
+  jQuery(".career").on("inview",function(){
+    jQuery(this).addClass("fade-in");
+  });
 });
+
+jQuery(function(){
+  jQuery(".career-sp").on("inview",function(){
+    jQuery(this).addClass("fade-in");
+  });
+});
+
